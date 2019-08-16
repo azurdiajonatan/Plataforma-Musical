@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaPrincipal.master.cs" Inherits="IPC2Proyect1.PaginaPrincipal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+     <link rel ="stylesheet" type="text/css" href="Estilos/EstiloPrincipal.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <section id="menu">
+                <ul>
+                    <a href ="Home.aspx">Home</a>
+                    <a href ="CrearUsuario.aspx">Registrar Artista</a>
+                    <a href ="#">Nueva Lista</a>
+                    <a href ="#">Mis Listas</a>
+                     <a href ="#"> Favoritos</a>
+                     <a href ="VerNoticias.aspx"> Novedades</a>
+                    <a href ="CerrarSesion.aspx">Cerrar sesion</a>
+
+                </ul>
+            </section>
+        </header>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    </form>
+</body>
+</html>

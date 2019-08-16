@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PrincipalArtista.master.cs" Inherits="IPC2Proyect1.PrincipalArtista" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Bienvenido Artista</title>
+     <link rel ="stylesheet" type="text/css" href="Estilos/EstiloArtista.css"/>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+          <header>
+            <section id="menu">
+                <ul>
+                    <a href ="HomeArtista.aspx">Home</a>
+                    <a href ="CrearUsuario.aspx">Mi Perfil</a>
+                    <a href ="CrearAlbum.aspx">Album nuevo</a>
+                    <a href ="#">Mis albumes</a>
+                    <a href ="CerrarSesion.aspx">Cerrar sesion</a>
+                </ul>
+            </section>
+        </header>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
